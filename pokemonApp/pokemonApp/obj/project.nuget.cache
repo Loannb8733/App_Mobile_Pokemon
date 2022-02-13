@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "IKQZ3BxDUuUYHQWrYwVxfLsxk3biJVj9fg9Jb/0B6/do8EpG3DyqJYlM2OnS4QoGA6taC44f+2o9+2v2YNpBCQ==",
+  "success": true,
+  "projectFilePath": "C:\\projetAppPokemon\\pokemonApp\\pokemonApp\\pokemonApp\\pokemonApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Loann\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Loann\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\Loann\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Loann\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\Loann\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": []
+}

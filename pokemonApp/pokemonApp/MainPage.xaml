@@ -1,0 +1,21 @@
+﻿<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:views="clr-namespace:pokemonApp.Views"
+       x:Class="pokemonApp.MainPage"
+       Shell.TabBarBackgroundColor="Black"
+       Shell.TabBarTitleColor="White"
+       Shell.TabBarUnselectedColor="Gray">
+
+    <TabBar>
+        <Tab Title="Accueil" Icon="home.png">
+            <views:Home />
+        </Tab>
+        <Tab Title="Liste" Icon="list.png">
+            <views:PokemonListPage />
+        </Tab>
+        <Tab Title="Ajout" Icon="add.png">
+            <views:Add />
+        </Tab>
+    </TabBar>
+
+</Shell>

@@ -5,13 +5,15 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
     <ContentPage.Content>
 
-        <CollectionView ItemsSource="{Binding ListOfPokemons}">
+        <CollectionView ItemsSource="{Binding pokeList}">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <Label Text="{Binding Name}" TextColor="Black" />
+                    <StackLayout Padding="15,20,5,5" Orientation="Horizontal">
+                        <Label Text="{Binding Id}" TextColor="Black" />
+                        <Label Text="{Binding Name}" TextColor="Black" />
+                    </StackLayout>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
-
     </ContentPage.Content>
 </ContentPage>

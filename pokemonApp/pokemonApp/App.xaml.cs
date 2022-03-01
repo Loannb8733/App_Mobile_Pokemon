@@ -10,7 +10,7 @@ namespace pokemonApp
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = /*new NavigationPage(new PokemonListPage());*/ new MainPage();
         }
 
         protected override void OnStart()

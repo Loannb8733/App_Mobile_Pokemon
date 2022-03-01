@@ -4,5 +4,6 @@
     <SelectedDevice>Samsung SM-G998U1</SelectedDevice>
     <SelectedPlatformGroup>PhysicalDevice</SelectedPlatformGroup>
     <ActiveDebugProfile>Samsung SM-G998U1</ActiveDebugProfile>
+    <DefaultDevice>Pixel_3a_API_30_x86</DefaultDevice>
   </PropertyGroup>
 </Project>

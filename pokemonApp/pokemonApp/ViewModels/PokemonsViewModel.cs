@@ -29,15 +29,15 @@ namespace pokemonApp.ViewModels
         {
             PokeApiClient pokeClient = new PokeApiClient();
 
-            for(int i = 1; i<100; i++)
+            for(int i = 1; i<=10; i++)
             {
                 PokeApiNet.Pokemon poke = await Task.Run(() => pokeClient.GetResourceAsync <PokeApiNet.Pokemon>(i));
 
                 Models.Pokemon pokemon = new Models.Pokemon();
                 pokemon.Id = poke.Id;
                 pokemon.Name = poke.Name;
-                pokemon.Type = poke.Types;
-                //pokemon.Picture = poke.Sprites(i);
+                pokemon.Weight = poke.Weight;
+                pokemon.Picture = poke.Sprites.FrontDefault;
 
                 pokeList.Add(pokemon);
             }

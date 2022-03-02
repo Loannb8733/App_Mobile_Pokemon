@@ -6,14 +6,14 @@
     <ContentPage.Content>
 
 
-        <CollectionView ItemsSource="{Binding pokeList}">
+        <CollectionView ItemsSource="{Binding pokeList}"
+                        SelectionMode="Single"
+                        SelectionChanged="OnCollectionViewSelectionChanged">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
                     <StackLayout Padding="15,20,5,5" Orientation="Horizontal">
-                        <Label Text="{Binding Id}" TextColor="Black" />
-                        <Label Text="{Binding Name}" TextColor="Black" />
-                        <Label Text="{Binding Weight}" TextColor="Black" />
-                        <Image Source="{Binding Picture}" />
+                        <Label Text="{Binding Name}" TextColor="Black" VerticalTextAlignment="Center"/>
+                        <Image Source="{Binding Picture}" WidthRequest="100" HeightRequest="100"/>
                     </StackLayout>
                 </DataTemplate>
             </CollectionView.ItemTemplate>

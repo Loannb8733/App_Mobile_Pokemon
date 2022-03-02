@@ -16,3 +16,4 @@ C:\projetAppPokemon\pokemonApp\pokemonApp\pokemonApp\obj\Debug\netstandard2.0\po
 C:\projetAppPokemon\pokemonApp\pokemonApp\pokemonApp\obj\Debug\netstandard2.0\refint\pokemonApp.dll
 C:\projetAppPokemon\pokemonApp\pokemonApp\pokemonApp\obj\Debug\netstandard2.0\pokemonApp.pdb
 C:\projetAppPokemon\pokemonApp\pokemonApp\pokemonApp\obj\Debug\netstandard2.0\ref\pokemonApp.dll
+C:\projetAppPokemon\pokemonApp\pokemonApp\pokemonApp\obj\Debug\netstandard2.0\Views\PokeDetails.xaml.g.cs

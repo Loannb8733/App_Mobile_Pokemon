@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="pokemonApp.Views.PokeDetails">
+    <ContentPage.Content>
+        <StackLayout Padding="15,20,5,5">
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Identifiant du pokemon : " 
+                              TextColor="Black" 
+                              FontAttributes="Bold" />
+                        <Span Text="{Binding Id}" 
+                              TextColor="Black" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Nom du pokemon : " 
+                              TextColor="Black" 
+                              FontAttributes="Bold" />
+                        <Span Text="{Binding Name}" 
+                              TextColor="Black" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            
+            <Image Source="{Binding Picture}" 
+                   WidthRequest="200" 
+                   HeightRequest="200"/>
+
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Poid de " 
+                              TextColor="Black" 
+                              FontAttributes="Bold" />
+                        <Span Text="{Binding Name}" 
+                              TextColor="Black"
+                              FontAttributes="Bold"/>
+                        <Span Text=" : " 
+                              TextColor="Black"
+                              FontAttributes="Bold"/>
+                        <Span Text="{Binding Weight}" 
+                              TextColor="Black" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Taille de " 
+                              TextColor="Black" 
+                              FontAttributes="Bold" />
+                        <Span Text="{Binding Name}" 
+                              TextColor="Black"
+                              FontAttributes="Bold"/>
+                        <Span Text=" : " 
+                              TextColor="Black"
+                              FontAttributes="Bold"/>
+                        <Span Text="{Binding Height}" 
+                              TextColor="Black" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Déplacements de " 
+                              TextColor="Black" 
+                              FontAttributes="Bold" />
+                        <Span Text="{Binding Name}" 
+                              TextColor="Black"
+                              FontAttributes="Bold"/>
+                        <Span Text=" : " 
+                              TextColor="Black"
+                              FontAttributes="Bold"/>
+                        <Span Text="{Binding Moves}" 
+                              TextColor="Black" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label Text="Toutes ces stats de base" 
+                   TextColor="Black" 
+                   FontAttributes="Bold"
+                   TextDecorations="Underline"/>
+
+            <StackLayout Padding="30,0,5,5">
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Point de vie : " 
+                              TextColor="Black" 
+                              FontAttributes="Bold" />
+                            <Span Text="{Binding Hp}" 
+                              TextColor="Black"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Puissance d'attaque : " 
+                              TextColor="Black" 
+                              FontAttributes="Bold" />
+                            <Span Text="{Binding Attacks}" 
+                              TextColor="Black"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Puissance de défense : " 
+                              TextColor="Black" 
+                              FontAttributes="Bold" />
+                            <Span Text="{Binding Defense}" 
+                              TextColor="Black"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Attaque spéciale: " 
+                              TextColor="Black" 
+                              FontAttributes="Bold" />
+                            <Span Text="{Binding SpecialAttacks}" 
+                              TextColor="Black"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Défense spéciale : " 
+                              TextColor="Black" 
+                              FontAttributes="Bold" />
+                            <Span Text="{Binding SpecialDefense}" 
+                              TextColor="Black"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Vitesse : " 
+                              TextColor="Black" 
+                              FontAttributes="Bold" />
+                            <Span Text="{Binding Speed}" 
+                              TextColor="Black"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </StackLayout>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

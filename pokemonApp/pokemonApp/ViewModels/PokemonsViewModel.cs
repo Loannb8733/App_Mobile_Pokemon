@@ -5,6 +5,8 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
+using Xamarin.Forms;
 
 namespace pokemonApp.ViewModels
 {
@@ -27,17 +29,25 @@ namespace pokemonApp.ViewModels
 
         async void api()
         {
-            PokeApiClient pokeClient = new PokeApiClient();
+            PokeApiClient client = new PokeApiClient();
 
-            for(int i = 1; i<=10; i++)
+            for(int i = 1; i<=20; i++)
             {
-                PokeApiNet.Pokemon poke = await Task.Run(() => pokeClient.GetResourceAsync <PokeApiNet.Pokemon>(i));
+                PokeApiNet.Pokemon poke = await Task.Run(() => client.GetResourceAsync <PokeApiNet.Pokemon>(i));
 
                 Models.Pokemon pokemon = new Models.Pokemon();
                 pokemon.Id = poke.Id;
                 pokemon.Name = poke.Name;
                 pokemon.Weight = poke.Weight;
-                pokemon.Picture = poke.Sprites.FrontDefault;
+                pokemon.Height = poke.Height;
+                pokemon.Moves = poke.Moves[0].Move.Name;
+                pokemon.Hp = poke.Stats[0].BaseStat;
+                pokemon.Attacks = poke.Stats[1].BaseStat;
+                pokemon.Defense = poke.Stats[2].BaseStat;
+                pokemon.SpecialAttacks = poke.Stats[3].BaseStat;
+                pokemon.SpecialDefense = poke.Stats[4].BaseStat;
+                pokemon.Speed = poke.Stats[5].BaseStat;
+                pokemon.Picture = poke.Sprites.BackShiny;
 
                 pokeList.Add(pokemon);
             }

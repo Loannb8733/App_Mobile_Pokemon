@@ -5,7 +5,25 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Hello Xamarin.Forms!" />
+            <Label 
+                Text="Nom :" 
+                TextColor="Black"/>
+            <Editor 
+                x:Name="editor" 
+                Placeholder="Entrez le nom du pokémon" 
+                PlaceholderColor="Black" 
+                TextColor="Black"
+                MaxLength="15" />
+
+            <Label 
+                Text="Poid :" 
+                TextColor="Black"/>
+            <Editor 
+                x:Name="editor1" 
+                Placeholder="Entrez le poid du pokémon" 
+                PlaceholderColor="Black" 
+                TextColor="Black"
+                MaxLength="15"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

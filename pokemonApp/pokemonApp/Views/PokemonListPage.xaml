@@ -5,10 +5,10 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
     <ContentPage.Content>
 
-
-        <CollectionView ItemsSource="{Binding pokeList}"
-                        SelectionMode="Single"
-                        SelectionChanged="OnCollectionViewSelectionChanged">
+        <CollectionView SelectionMode="Single"
+                        ItemsSource="{Binding PokeList}"
+                        SelectionChanged="OnCollectionViewSelectionChanged"
+                        x:Name="myListView">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
                     <StackLayout Padding="15,20,5,5" Orientation="Horizontal">

@@ -3,6 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="pokemonApp.Views.PokeDetails">
     <ContentPage.Content>
+        
+        
         <StackLayout Padding="15,20,5,5">
             <Label>
                 <Label.FormattedText>
@@ -96,10 +98,10 @@
                     <Label.FormattedText>
                         <FormattedString>
                             <Span Text="Point de vie : " 
-                              TextColor="Black" 
-                              FontAttributes="Bold" />
+                                  TextColor="Black" 
+                                  FontAttributes="Bold" />
                             <Span Text="{Binding Hp}" 
-                              TextColor="Black"/>
+                                  TextColor="Black"/>
                         </FormattedString>
                     </Label.FormattedText>
                 </Label>
@@ -108,10 +110,10 @@
                     <Label.FormattedText>
                         <FormattedString>
                             <Span Text="Puissance d'attaque : " 
-                              TextColor="Black" 
-                              FontAttributes="Bold" />
+                                  TextColor="Black" 
+                                  FontAttributes="Bold" />
                             <Span Text="{Binding Attacks}" 
-                              TextColor="Black"/>
+                                  TextColor="Black"/>
                         </FormattedString>
                     </Label.FormattedText>
                 </Label>
@@ -120,10 +122,10 @@
                     <Label.FormattedText>
                         <FormattedString>
                             <Span Text="Puissance de défense : " 
-                              TextColor="Black" 
-                              FontAttributes="Bold" />
+                                  TextColor="Black" 
+                                  FontAttributes="Bold" />
                             <Span Text="{Binding Defense}" 
-                              TextColor="Black"/>
+                                  TextColor="Black"/>
                         </FormattedString>
                     </Label.FormattedText>
                 </Label>
@@ -132,10 +134,10 @@
                     <Label.FormattedText>
                         <FormattedString>
                             <Span Text="Attaque spéciale: " 
-                              TextColor="Black" 
-                              FontAttributes="Bold" />
+                                  TextColor="Black" 
+                                  FontAttributes="Bold" />
                             <Span Text="{Binding SpecialAttacks}" 
-                              TextColor="Black"/>
+                                  TextColor="Black"/>
                         </FormattedString>
                     </Label.FormattedText>
                 </Label>
@@ -144,10 +146,10 @@
                     <Label.FormattedText>
                         <FormattedString>
                             <Span Text="Défense spéciale : " 
-                              TextColor="Black" 
-                              FontAttributes="Bold" />
+                                  TextColor="Black" 
+                                  FontAttributes="Bold" />
                             <Span Text="{Binding SpecialDefense}" 
-                              TextColor="Black"/>
+                                  TextColor="Black"/>
                         </FormattedString>
                     </Label.FormattedText>
                 </Label>
@@ -156,10 +158,10 @@
                     <Label.FormattedText>
                         <FormattedString>
                             <Span Text="Vitesse : " 
-                              TextColor="Black" 
-                              FontAttributes="Bold" />
+                                  TextColor="Black" 
+                                  FontAttributes="Bold" />
                             <Span Text="{Binding Speed}" 
-                              TextColor="Black"/>
+                                  TextColor="Black"/>
                         </FormattedString>
                     </Label.FormattedText>
                 </Label>

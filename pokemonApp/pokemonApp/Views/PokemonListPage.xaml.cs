@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 using Newtonsoft.Json;
 using pokemonApp.Models;
 using pokemonApp.ViewModels;
+using SQLite;
 using Xamarin.Forms;
 
 namespace pokemonApp.Views
 {
     public partial class PokemonListPage : ContentPage
     {
-
         public PokemonListPage()
         {
             InitializeComponent();
@@ -32,6 +32,5 @@ namespace pokemonApp.Views
 
             await Navigation.PushAsync(new PokeDetails(current));
         }
-
     }
 }

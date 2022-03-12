@@ -6,13 +6,6 @@
     <ContentPage.Content>
         <StackLayout>
             <StackLayout Margin="20">
-                <Label 
-                    Text="Pokemon" 
-                    TextColor="Black" 
-                    FontSize="Title"
-                    HorizontalTextAlignment="Center"
-                />
-
                 <Image Source="logoApp.png"/>
 
                 <Label 

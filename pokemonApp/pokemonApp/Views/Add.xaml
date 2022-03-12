@@ -4,26 +4,142 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
     <ContentPage.Content>
-        <StackLayout>
-            <Label 
-                Text="Nom :" 
-                TextColor="Black"/>
-            <Editor 
-                x:Name="editor" 
-                Placeholder="Entrez le nom du pokémon" 
-                PlaceholderColor="Black" 
-                TextColor="Black"
-                MaxLength="15" />
+        <ScrollView>
+            <StackLayout Margin="20,20,20,0">
 
-            <Label 
-                Text="Poid :" 
-                TextColor="Black"/>
-            <Editor 
-                x:Name="editor1" 
-                Placeholder="Entrez le poid du pokémon" 
-                PlaceholderColor="Black" 
-                TextColor="Black"
-                MaxLength="15"/>
-        </StackLayout>
+                
+                <Label 
+                        Text="Nom :" 
+                        TextColor="Black"
+                        FontAttributes="Bold"/>
+                
+                <Entry TextChanged="Check"
+                        x:Name="NameEntry" 
+                        Placeholder="Nom du pokémon" 
+                        PlaceholderColor="Gray" 
+                        TextColor="Black"
+                        MaxLength="15" />
+
+                <Label Text="Image :" 
+                       TextColor="Black"
+                       FontAttributes="Bold"/>
+
+                <!-- <Image x:Name="selectedImage"/>
+
+                <Button Text="Coisir une image"
+                        x:Name="chooseButton"
+                        Clicked="Handle_Clicked"/> -->
+
+                <Label 
+                        Text="Poid :" 
+                        TextColor="Black"
+                        FontAttributes="Bold"/>
+                <Entry TextChanged="Check"
+                        x:Name="WeightEntry"
+                        Placeholder="Entrez le poid du pokémon" 
+                        PlaceholderColor="Gray" 
+                        TextColor="Black"
+                        MaxLength="15"/>
+
+                <Label 
+                        Text="Taille :" 
+                        TextColor="Black"
+                        FontAttributes="Bold"/>
+                <Entry TextChanged="Check"
+                        x:Name="HeightEntry"
+                        Placeholder="Entrez la taille du pokémon" 
+                        PlaceholderColor="Gray" 
+                        TextColor="Black"
+                        MaxLength="15"/>
+
+                <Label 
+                        Text="Déplacements :" 
+                        TextColor="Black"
+                        FontAttributes="Bold"/>
+                <Entry TextChanged="Check"
+                        x:Name="MovesEntry"
+                        Placeholder="Entrez le(s) mouvements du pokémon" 
+                        PlaceholderColor="Gray" 
+                        TextColor="Black"
+                        MaxLength="15"/>
+
+                <Label 
+                        Text="Point de vie :" 
+                        TextColor="Black"
+                        FontAttributes="Bold"/>
+                <Entry TextChanged="Check"
+                        x:Name="HpEntry"
+                        Placeholder="Entrez le nombre de point de vie du pokémon" 
+                        PlaceholderColor="Gray" 
+                        TextColor="Black"
+                        MaxLength="15"/>
+
+                <Label 
+                        Text="Attaque :" 
+                        TextColor="Black"
+                        FontAttributes="Bold"/>
+                <Entry TextChanged="Check"
+                        x:Name="AttacksEntry"
+                        Placeholder="Entrez la puissance d'attaque du pokémon" 
+                        PlaceholderColor="Gray" 
+                        TextColor="Black"
+                        MaxLength="15"/>
+
+                <Label 
+                        Text="Defense :" 
+                        TextColor="Black"
+                        FontAttributes="Bold"/>
+                <Entry TextChanged="Check"
+                        x:Name="DefenseEntry"
+                        Placeholder="Entrez la puissance de défense du pokémon" 
+                        PlaceholderColor="Gray" 
+                        TextColor="Black"
+                        MaxLength="15"/>
+
+
+                <Label 
+                        Text="Attaque spé :" 
+                        TextColor="Black"
+                        FontAttributes="Bold"/>
+                <Entry TextChanged="Check"
+                        x:Name="SpecialAttaksEntry"
+                        Placeholder="Entrez la puissance de l'attaque spé du pokémon" 
+                        PlaceholderColor="Gray" 
+                        TextColor="Black"
+                        MaxLength="15"/>
+
+                <Label 
+                        Text="Défense spé :" 
+                        TextColor="Black"
+                        FontAttributes="Bold"/>
+                <Entry TextChanged="Check"
+                        x:Name="SpecialDefenseEntry"
+                        Placeholder="Entrez la puissance de la défense spé du pokémon" 
+                        PlaceholderColor="Gray" 
+                        TextColor="Black"
+                        MaxLength="15"/>
+
+                <Label 
+                        Text="Vitesse :" 
+                        TextColor="Black"
+                        FontAttributes="Bold"/>
+                <Entry TextChanged="Check"
+                        x:Name="SpeedEntry"
+                        Placeholder="Entrez la vitesse du pokémon" 
+                        PlaceholderColor="Gray" 
+                        TextColor="Black"
+                        MaxLength="15"/>
+
+                <Button IsEnabled="False"
+                        Text="Sauvegarder"
+                        x:Name="SaveButton"
+                        Clicked="Signed_Clicked"/>
+
+                <Button IsEnabled="False"
+                        Text="Voir"
+                        x:Name="SeeButton"
+                        Clicked="Show_Clicked"/>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
